@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rifa PS4 Pro + TV</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Sorteio PS4 Pro + TV</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Início</a></li>
+                <li><a href="#rifas">Rifas Atuais</a></li>
+                <li><a href="#como-funciona">Como Funciona</a></li>
+                <li><a href="#ganhadores">Ganhadores</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <div class="hero">
+            <h2>Participe do Sorteio de um PS4 Pro + TV 4K!</h2>
+            <p>Compre seu bilhete e concorra a prêmios incríveis.</p>
+            <div id="countdown" class="countdown"></div>
+            <a href="#rifas" class="cta-button">Participar Agora</a>
+        </div>
+    </section>
+
+    <section id="rifas" class="rifas-section">
+        <h2>Rifas Atuais</h2>
+        <div class="rifa">
+            <h3>Prêmio: PS4 Pro</h3>
+            <img src="https://via.placeholder.com/400x300" alt="PS4 Pro">
+            <p>Data do sorteio: 30/12/2024</p>
+            <p>Valor do bilhete: R$ 25,00</p>
+            <button class="btn" onclick="addToCart('PS4 Pro', 25)">Comprar Bilhete</button>
+        </div>
+        <div class="rifa">
+            <h3>Prêmio: TV 4K 55"</h3>
+            <img src="https://via.placeholder.com/400x300" alt="TV 4K">
+            <p>Data do sorteio: 30/12/2024</p>
+            <p>Valor do bilhete: R$ 30,00</p>
+            <button class="btn" onclick="addToCart('TV 4K 55', 30)">Comprar Bilhete</button>
+        </div>
+    </section>
+
+    <section id="cart" class="cart-section">
+        <h2>Meu Carrinho</h2>
+        <div id="cart-items"></div>
+        <p id="total-price"></p>
+        <button class="btn" onclick="checkout()">Finalizar Compra</button>
+    </section>
+
+    <section id="como-funciona" class="how-it-works">
+        <h2>Como Funciona</h2>
+        <p>1. Escolha uma rifa e compre um bilhete.</p>
+        <p>2. Cada bilhete te dá um número único de sorteio.</p>
+        <p>3. Aguarde o sorteio e veja se você é o vencedor!</p>
+    </section>
+
+    <section id="ganhadores" class="winners">
+        <h2>Ganhadores Anteriores</h2>
+        <div class="winner">
+            <h3>Lucas Pereira - iPhone 12</h3>
+        </div>
+        <div class="winner">
+            <h3>Ana Souza - Xbox Series X</h3>
+        </div>
+    </section>
+
+    <section id="contato" class="contact">
+        <h2>Contato</h2>
+        <form>
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Mensagem:</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <button type="submit" class="btn">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Sorteio PS4 Pro + TV. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
